@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    height: 90vh;
+    margin: auto;
+}
+.container header{
+    background-color: #FFABE1;
+    color: #2c2c2c;
+    padding: 50px;
+    text-align: center;
+}
+.container nav{
+    background-color: #C689C6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container nav a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    flex-grow: 1;
+}
+.container nav a:hover{
+    background-color: #893689;
+}
+.container .main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .main aside{
+    background-color: #937DC2;
+    color: aliceblue;
+    padding: 20px;
+    flex: 30%;
+}
+.container .main section{
+    background-color: #E1D9F3;
+    color: black;
+    padding: 20px;
+    flex: 70%;
+}
+.container footer{
+    background-color: #FFABE1;
+    color: #2c2c2c;
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width:800px){
+    .container nav{
+        flex-direction: column;
+    }
+    .container .main{
+        flex-direction: column;
+    }
+}
